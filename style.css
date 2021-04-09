@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(38, 0, 128);
+    font-family: 'Rubik', sans-serif;
+    color: whitesmoke 
+}
+
+.answer-li {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.answer-button {
+    width: 80%;
+    text-align: left;
+    padding: 10px;
+    background-color: deepskyblue;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 20px
+}
+
+#resetButton {
+    padding: 10px;
+    background-color: deepskyblue;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.questioncontainer {
+    margin: 20px;
+    transition: all 500ms
+   
+}
+
+#end-container {
+    margin: 40px 100px;
+    transition: all 500ms
+}
+
+#end-container h3 {
+    margin: 40px 0;
+}
+
