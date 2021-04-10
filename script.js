@@ -73,8 +73,12 @@ q1a4.addEventListener('click', function() {
 function showQuestion2() {
     if (questionState.q1.answered === true) {
         const question2 = document.getElementById("question2-container")
+        question2.display = "initial"
         question2.style.opacity = 1;
-        question2.scrollIntoView({behavior: "smooth", block: "center"})
+        setTimeout(function() { 
+           question2.scrollIntoView({behavior: "smooth", block: "center"}) 
+        }, 250)
+        
 
         
     }
@@ -123,7 +127,9 @@ function showQuestion3() {
     if (questionState.q2.answered === true) {
         const question3 = document.getElementById("question3-container")
         question3.style.opacity = 1;
-        question3.scrollIntoView({behavior: "smooth", block: "center"})
+        setTimeout(function() { 
+            question3.scrollIntoView({behavior: "smooth", block: "center"}) 
+         }, 250)
        
     }
 }
@@ -170,7 +176,9 @@ function showQuestion4() {
     if (questionState.q3.answered === true) {
         const question4 = document.getElementById("question4-container")
         question4.style.opacity = 1;
-        question4.scrollIntoView({behavior: "smooth", block: "center"});
+        setTimeout(function() { 
+            question4.scrollIntoView({behavior: "smooth", block: "center"}) 
+         }, 250)
       
     }
 }
@@ -200,7 +208,9 @@ function showQuestion5() {
     if (questionState.q4.answered === true) {
         const question5 = document.getElementById("question5-container")
         question5.style.opacity = 1;
-        question5.scrollIntoView({behavior: "smooth", block: "center"});
+        setTimeout(function() { 
+            question5.scrollIntoView({behavior: "smooth", block: "center"}) 
+         }, 250)
        
     }
 }
@@ -260,7 +270,9 @@ function finishQuiz() {
         };
 
     endContainer.style.opacity = 1
-    endContainer.scrollIntoView({behavior: "smooth", block: "start"})
+    setTimeout(function() { 
+        endContainer.scrollIntoView({behavior: "smooth", block: "center"}) 
+     }, 250)
     }
 }
 
