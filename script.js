@@ -42,7 +42,7 @@ function disableQ1() {
 q1a1.addEventListener('click', function() {
     questionState.q1.answered = true;
     q1a1.style.backgroundColor = "red";
-    q1a3.style.backgroundColor = "lime"
+    q1a3.style.backgroundColor = "limegreen"
 
     disableQ1()
 })
@@ -50,14 +50,14 @@ q1a1.addEventListener('click', function() {
 q1a2.addEventListener('click', function() {
     questionState.q1.answered = true;
     q1a2.style.backgroundColor = "red";
-    q1a3.style.backgroundColor = "lime"
+    q1a3.style.backgroundColor = "limegreen"
 
     disableQ1()
 })
 
 q1a3.addEventListener('click', function() {
     questionState.q1.answered = true;
-    q1a3.style.backgroundColor = "lime";
+    q1a3.style.backgroundColor = "limegreen";
     questionState.rightAnswers = questionState.rightAnswers + 1
     disableQ1()
 })
@@ -65,7 +65,7 @@ q1a3.addEventListener('click', function() {
 q1a4.addEventListener('click', function() {
     questionState.q1.answered = true;
     q1a4.style.backgroundColor = "red";
-    q1a3.style.backgroundColor = "lime"
+    q1a3.style.backgroundColor = "limegreen"
 
     disableQ1()
 })
@@ -75,6 +75,7 @@ function showQuestion2() {
         const question2 = document.getElementById("question2-container")
         question2.display = "initial"
         question2.style.opacity = 1;
+        document.getElementById("status-bar-1").style.backgroundColor = "deepskyblue"
         setTimeout(function() { 
            question2.scrollIntoView({behavior: "smooth", block: "center"}) 
         }, 250)
@@ -95,14 +96,14 @@ function disableQ2() {
 q2a1.addEventListener('click', function() {
     questionState.q2.answered = true;
     q2a1.style.backgroundColor = "red";
-    q2a2.style.backgroundColor = "lime"
+    q2a2.style.backgroundColor = "limegreen"
 
     disableQ2()
 })
 
 q2a2.addEventListener('click', function() {
     questionState.q2.answered = true;
-    q2a2.style.backgroundColor = "lime"
+    q2a2.style.backgroundColor = "limegreen"
     questionState.rightAnswers = questionState.rightAnswers + 1
     disableQ2()
 })
@@ -110,7 +111,7 @@ q2a2.addEventListener('click', function() {
 q2a3.addEventListener('click', function() {
     questionState.q2.answered = true;
     q2a3.style.backgroundColor = "red";
-    q2a2.style.backgroundColor = "lime";
+    q2a2.style.backgroundColor = "limegreen";
     
     disableQ2()
 })
@@ -118,7 +119,7 @@ q2a3.addEventListener('click', function() {
 q2a4.addEventListener('click', function() {
     questionState.q2.answered = true;
     q2a4.style.backgroundColor = "red";
-    q2a2.style.backgroundColor = "lime"
+    q2a2.style.backgroundColor = "limegreen"
 
     disableQ2()
 })
@@ -126,6 +127,7 @@ q2a4.addEventListener('click', function() {
 function showQuestion3() {
     if (questionState.q2.answered === true) {
         const question3 = document.getElementById("question3-container")
+        document.getElementById("status-bar-2").style.backgroundColor = "deepskyblue"
         question3.style.opacity = 1;
         setTimeout(function() { 
             question3.scrollIntoView({behavior: "smooth", block: "center"}) 
@@ -144,14 +146,14 @@ function disableQ3() {
 
 q3a1.addEventListener('click', function() {
     questionState.q3.answered = true;
-    q3a1.style.backgroundColor = "lime"
+    q3a1.style.backgroundColor = "limegreen"
     questionState.rightAnswers = questionState.rightAnswers + 1
     disableQ3()
 })
 
 q3a2.addEventListener('click', function() {
     questionState.q3.answered = true;
-    q3a1.style.backgroundColor = "lime"
+    q3a1.style.backgroundColor = "limegreen"
     q3a2.style.backgroundColor = "red";
     disableQ3()
 })
@@ -159,7 +161,7 @@ q3a2.addEventListener('click', function() {
 q3a3.addEventListener('click', function() {
     questionState.q3.answered = true;
     q3a3.style.backgroundColor = "red";
-    q3a1.style.backgroundColor = "lime";
+    q3a1.style.backgroundColor = "limegreen";
     
     disableQ3()
 })
@@ -167,7 +169,7 @@ q3a3.addEventListener('click', function() {
 q3a4.addEventListener('click', function() {
     questionState.q3.answered = true;
     q3a4.style.backgroundColor = "red";
-    q2a1.style.backgroundColor = "lime"
+    q2a1.style.backgroundColor = "limegreen"
 
     disableQ3()
 })
@@ -175,6 +177,7 @@ q3a4.addEventListener('click', function() {
 function showQuestion4() {
     if (questionState.q3.answered === true) {
         const question4 = document.getElementById("question4-container")
+        document.getElementById("status-bar-3").style.backgroundColor = "deepskyblue"
         question4.style.opacity = 1;
         setTimeout(function() { 
             question4.scrollIntoView({behavior: "smooth", block: "center"}) 
@@ -192,13 +195,13 @@ function disableQ4() {
 q4a1.addEventListener('click', function() {
     questionState.q4.answered = true;
     q4a1.style.backgroundColor = "red"
-    q4a2.style.backgroundColor = "lime"
+    q4a2.style.backgroundColor = "limegreen"
     disableQ4()
 })
 
 q4a2.addEventListener('click', function() {
     questionState.q4.answered = true;
-    q4a2.style.backgroundColor = "lime"
+    q4a2.style.backgroundColor = "limegreen"
     questionState.rightAnswers = questionState.rightAnswers + 1
     disableQ4()
 })
@@ -207,6 +210,7 @@ q4a2.addEventListener('click', function() {
 function showQuestion5() {
     if (questionState.q4.answered === true) {
         const question5 = document.getElementById("question5-container")
+        document.getElementById("status-bar-4").style.backgroundColor = "deepskyblue"
         question5.style.opacity = 1;
         setTimeout(function() { 
             question5.scrollIntoView({behavior: "smooth", block: "center"}) 
@@ -226,7 +230,7 @@ function disableQ5() {
 q5a1.addEventListener('click', function() {
     questionState.q5.answered = true;
     q5a1.style.backgroundColor = "red";
-    q5a4.style.backgroundColor = "lime"
+    q5a4.style.backgroundColor = "limegreen"
 
     disableQ5()
 })
@@ -234,7 +238,7 @@ q5a1.addEventListener('click', function() {
 q5a2.addEventListener('click', function() {
     questionState.q5.answered = true;
     q5a2.style.backgroundColor = "red";
-    q5a4.style.backgroundColor = "lime"
+    q5a4.style.backgroundColor = "limegreen"
 
     disableQ5()
 })
@@ -242,20 +246,21 @@ q5a2.addEventListener('click', function() {
 q5a3.addEventListener('click', function() {
     questionState.q5.answered = true;
     q5a3.style.backgroundColor = "red";
-    q5a4.style.backgroundColor = "lime"
+    q5a4.style.backgroundColor = "limegreen"
 
     disableQ5()
 })
 
 q5a4.addEventListener('click', function() {
     questionState.q5.answered = true;
-    q5a4.style.backgroundColor = "lime"
+    q5a4.style.backgroundColor = "limegreen"
     questionState.rightAnswers = questionState.rightAnswers + 1
     disableQ5()
 })
 
 function finishQuiz() {
     if (questionState.q5.answered === true) {
+        document.getElementById("status-bar-5").style.backgroundColor = "deepskyblue"
         const endContainer = document.getElementById("end-container")
     if (
         questionState.rightAnswers <= 3) {
@@ -283,6 +288,10 @@ resetButton.addEventListener('click', function() {
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].disabled = false
         buttons[i].style.backgroundColor = "deepskyblue"
+    }
+    const statusSegments = document.getElementsByClassName("status-bar-segment")
+    for (let i = 0; i < 5; i++) {
+        statusSegments[i].style.backgroundColor = "white"
     }
     questionState.q1.answered = false;
     questionState.q2.answered = false;

@@ -1,7 +1,10 @@
+
+
 body {
     background-color: rgb(38, 0, 128);
     font-family: 'Rubik', sans-serif;
-    color: whitesmoke 
+    color: whitesmoke;
+    margin-left: 0;
 }
 
 .answer-li {
@@ -49,11 +52,31 @@ body {
 }
 
 #end-container {
-    margin: 40px 100px;
+    margin: 40px 100px 100px 100px;
     transition: all 500ms
 }
 
 #end-container h3 {
-    margin: 40px 0;
+    margin: 40px 0 ;
 }
 
+#status-container {
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    z-index: 10;
+    opacity: 0.75;
+    background-color: rgb(38, 0, 128);
+}
+
+.status-bar-segment {
+    width: 80px;
+    height: 5px;
+    background-color: white;
+    
+}
